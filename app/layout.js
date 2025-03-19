@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "OrionAI",
+  title: "OrionDeepAI",
   description: "Your AI Assistant",
 };
 
