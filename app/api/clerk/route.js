@@ -21,13 +21,14 @@ export async function POST(req){
 
   // Prepare the user data to be saved in the database
   const userData = {
-    _id: data.user_id,
-    email: data.email_address[0].email_address,
+    _id: data.id,
+    email: data.email_addresses[0].email_address,
     name: `${data.first_name} ${data.last_name}`, 
     image: data.image_url,
   }; 
-
+ 
   await connectDB();
+  // Perform the CRUD operation based on the event type
   
   switch(type){
     case 'user.created':
