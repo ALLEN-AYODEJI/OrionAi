@@ -28,7 +28,8 @@ export async function POST(req){
   }; 
  
   await connectDB();
-  // Perform the CRUD operation based on the event type
+  
+  // Ceck the type of event and perform the necessary action
   
   switch(type){
     case 'user.created':
